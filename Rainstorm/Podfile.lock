@@ -1,4 +1,5 @@
 PODS:
+  - FloatingButtonPOP-swift (1.0.0)
   - Mockingjay (2.0.1):
     - Mockingjay/Core (= 2.0.1)
     - Mockingjay/XCTest (= 2.0.1)
@@ -9,17 +10,20 @@ PODS:
   - URITemplate (2.0.3)
 
 DEPENDENCIES:
+  - FloatingButtonPOP-swift
   - Mockingjay
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - FloatingButtonPOP-swift
     - Mockingjay
     - URITemplate
 
 SPEC CHECKSUMS:
+  FloatingButtonPOP-swift: 406bc011ed894f1c5f2b59a679ca0fad2d2452db
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
 
-PODFILE CHECKSUM: f92409b1e65f771c5a0e53f1a01844ff69fa7ddf
+PODFILE CHECKSUM: 7cb7901f47aa93ade0288a1ff74254cff1850f3a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

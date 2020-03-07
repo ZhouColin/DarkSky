@@ -9,4 +9,6 @@ target 'Rainstorm' do
     pod 'Mockingjay'
   end
 
+  pod ‘FloatingButtonPOP-swift’
+
 end

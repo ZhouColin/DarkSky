@@ -7,8 +7,14 @@
 //
 
 import UIKit
+//import FloatingButtonPOP_swift
 
 class RootViewController: UIViewController {
+    
+//    func userDidTapOnItem(at index: Int, with model: String) {
+//        print("test")
+//    }
+    
     
     // MARK: - Types
     
@@ -66,6 +72,8 @@ class RootViewController: UIViewController {
         
         // Refresh Weather Data
         viewModel?.refresh()
+        
+//        addFloaterMenu(with: [("Facebook", UIImage(named: "facebook")),("Instagram", UIImage(named: "instagram"))], mainItem: ("Connect", UIImage(named: "share")), dropShadow: true)
     }
 
     // MARK: - Helper Methods
