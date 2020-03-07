@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC863B6A2411A7340042B16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B692411A7340042B16F /* AppDelegate.swift */; };
+		AC863B6C2411A7340042B16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B6B2411A7340042B16F /* SceneDelegate.swift */; };
+		AC863B6E2411A7340042B16F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B6D2411A7340042B16F /* MainVC.swift */; };
+		AC863B712411A7340042B16F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC863B6F2411A7340042B16F /* Main.storyboard */; };
+		AC863B732411A7350042B16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC863B722411A7350042B16F /* Assets.xcassets */; };
+		AC863B762411A7350042B16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC863B742411A7350042B16F /* LaunchScreen.storyboard */; };
+		AC863B8424121BF80042B16F /* MainVC-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B8324121BF80042B16F /* MainVC-TableView.swift */; };
+		AC863B8624121DB20042B16F /* MainVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B8524121DB20042B16F /* MainVCTableViewCell.swift */; };
+		AC863B892412DF6D0042B16F /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B882412DF6D0042B16F /* WeekDay.swift */; };
+		AC863B8B2412E16F0042B16F /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B8A2412E16F0042B16F /* WeekView.swift */; };
+		AC863B8D2412E1AA0042B16F /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B8C2412E1AA0042B16F /* WeekDayView.swift */; };
+		AC863B912412E2EA0042B16F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B902412E2EA0042B16F /* UIImage.swift */; };
+		AC863B932413709B0042B16F /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B922413709B0042B16F /* WeatherData.swift */; };
+		AC863B952413711E0042B16F /* DarkSkyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B942413711E0042B16F /* DarkSkyResponse.swift */; };
+		AC863B9A241387FE0042B16F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B99241387FE0042B16F /* LocationManager.swift */; };
+		AC863B9C24138B8A0042B16F /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B9B24138B8A0042B16F /* WeatherRequest.swift */; };
+		AC863B9E24138BB10042B16F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B9D24138BB10042B16F /* Location.swift */; };
+		AC863BA024138D000042B16F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863B9F24138D000042B16F /* NetworkService.swift */; };
+		AC863BA224138E280042B16F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863BA124138E280042B16F /* LocationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC863B662411A7340042B16F /* DarkSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC863B692411A7340042B16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC863B6B2411A7340042B16F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC863B6D2411A7340042B16F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		AC863B702411A7340042B16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC863B722411A7350042B16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC863B752411A7350042B16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC863B772411A7350042B16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC863B8324121BF80042B16F /* MainVC-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC-TableView.swift"; sourceTree = "<group>"; };
+		AC863B8524121DB20042B16F /* MainVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCTableViewCell.swift; sourceTree = "<group>"; };
+		AC863B882412DF6D0042B16F /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		AC863B8A2412E16F0042B16F /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		AC863B8C2412E1AA0042B16F /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		AC863B902412E2EA0042B16F /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		AC863B922413709B0042B16F /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		AC863B942413711E0042B16F /* DarkSkyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyResponse.swift; sourceTree = "<group>"; };
+		AC863B99241387FE0042B16F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AC863B9B24138B8A0042B16F /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
+		AC863B9D24138BB10042B16F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AC863B9F24138D000042B16F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AC863BA124138E280042B16F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC863B632411A7340042B16F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC863B5D2411A7340042B16F = {
+			isa = PBXGroup;
+			children = (
+				AC863B682411A7340042B16F /* DarkSky */,
+				AC863B672411A7340042B16F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC863B672411A7340042B16F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B662411A7340042B16F /* DarkSky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC863B682411A7340042B16F /* DarkSky */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B7D241211F40042B16F /* Model */,
+				AC863B7E241211F90042B16F /* View */,
+				AC863B7F241211FE0042B16F /* Controller */,
+				AC863B802412120B0042B16F /* Resources */,
+				AC863B772411A7350042B16F /* Info.plist */,
+			);
+			path = DarkSky;
+			sourceTree = "<group>";
+		};
+		AC863B7D241211F40042B16F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B98241387E80042B16F /* Managers */,
+				AC863B8F2412E2D10042B16F /* Extensions */,
+				AC863B8E2412E1C60042B16F /* Protocols */,
+				AC863B8A2412E16F0042B16F /* WeekView.swift */,
+				AC863B8C2412E1AA0042B16F /* WeekDayView.swift */,
+				AC863B942413711E0042B16F /* DarkSkyResponse.swift */,
+				AC863B9B24138B8A0042B16F /* WeatherRequest.swift */,
+				AC863B9D24138BB10042B16F /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC863B7E241211F90042B16F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B8524121DB20042B16F /* MainVCTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC863B7F241211FE0042B16F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B6D2411A7340042B16F /* MainVC.swift */,
+				AC863B8324121BF80042B16F /* MainVC-TableView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC863B802412120B0042B16F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B6B2411A7340042B16F /* SceneDelegate.swift */,
+				AC863B742411A7350042B16F /* LaunchScreen.storyboard */,
+				AC863B722411A7350042B16F /* Assets.xcassets */,
+				AC863B692411A7340042B16F /* AppDelegate.swift */,
+				AC863B6F2411A7340042B16F /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC863B8E2412E1C60042B16F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B882412DF6D0042B16F /* WeekDay.swift */,
+				AC863B922413709B0042B16F /* WeatherData.swift */,
+				AC863B9F24138D000042B16F /* NetworkService.swift */,
+				AC863BA124138E280042B16F /* LocationService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AC863B8F2412E2D10042B16F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B902412E2EA0042B16F /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC863B98241387E80042B16F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AC863B99241387FE0042B16F /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC863B652411A7340042B16F /* DarkSky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC863B7A2411A7350042B16F /* Build configuration list for PBXNativeTarget "DarkSky" */;
+			buildPhases = (
+				AC863B622411A7340042B16F /* Sources */,
+				AC863B632411A7340042B16F /* Frameworks */,
+				AC863B642411A7340042B16F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkSky;
+			productName = DarkSky;
+			productReference = AC863B662411A7340042B16F /* DarkSky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC863B5E2411A7340042B16F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Colin Zhou";
+				TargetAttributes = {
+					AC863B652411A7340042B16F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = AC863B612411A7340042B16F /* Build configuration list for PBXProject "DarkSky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC863B5D2411A7340042B16F;
+			productRefGroup = AC863B672411A7340042B16F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC863B652411A7340042B16F /* DarkSky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC863B642411A7340042B16F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC863B762411A7350042B16F /* LaunchScreen.storyboard in Resources */,
+				AC863B732411A7350042B16F /* Assets.xcassets in Resources */,
+				AC863B712411A7340042B16F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC863B622411A7340042B16F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC863B8B2412E16F0042B16F /* WeekView.swift in Sources */,
+				AC863B912412E2EA0042B16F /* UIImage.swift in Sources */,
+				AC863B892412DF6D0042B16F /* WeekDay.swift in Sources */,
+				AC863B952413711E0042B16F /* DarkSkyResponse.swift in Sources */,
+				AC863B6E2411A7340042B16F /* MainVC.swift in Sources */,
+				AC863B932413709B0042B16F /* WeatherData.swift in Sources */,
+				AC863B9E24138BB10042B16F /* Location.swift in Sources */,
+				AC863B8D2412E1AA0042B16F /* WeekDayView.swift in Sources */,
+				AC863B6A2411A7340042B16F /* AppDelegate.swift in Sources */,
+				AC863B9A241387FE0042B16F /* LocationManager.swift in Sources */,
+				AC863BA224138E280042B16F /* LocationService.swift in Sources */,
+				AC863BA024138D000042B16F /* NetworkService.swift in Sources */,
+				AC863B8624121DB20042B16F /* MainVCTableViewCell.swift in Sources */,
+				AC863B8424121BF80042B16F /* MainVC-TableView.swift in Sources */,
+				AC863B9C24138B8A0042B16F /* WeatherRequest.swift in Sources */,
+				AC863B6C2411A7340042B16F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC863B6F2411A7340042B16F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC863B702411A7340042B16F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC863B742411A7350042B16F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC863B752411A7350042B16F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC863B782411A7350042B16F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC863B792411A7350042B16F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC863B7B2411A7350042B16F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDKMBCK8ZF;
+				INFOPLIST_FILE = DarkSky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Colin-Zhou.DarkSky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC863B7C2411A7350042B16F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDKMBCK8ZF;
+				INFOPLIST_FILE = DarkSky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Colin-Zhou.DarkSky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC863B612411A7340042B16F /* Build configuration list for PBXProject "DarkSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC863B782411A7350042B16F /* Debug */,
+				AC863B792411A7350042B16F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC863B7A2411A7350042B16F /* Build configuration list for PBXNativeTarget "DarkSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC863B7B2411A7350042B16F /* Debug */,
+				AC863B7C2411A7350042B16F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC863B5E2411A7340042B16F /* Project object */;
+}
