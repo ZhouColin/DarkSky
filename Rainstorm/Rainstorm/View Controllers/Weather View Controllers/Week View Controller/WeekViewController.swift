@@ -7,16 +7,12 @@
 //
 
 import UIKit
-import FloatingButtonPOP_swift
 
 protocol WeekViewControllerDelegate: class {
     func controllerDidRefresh(_ controller: WeekViewController)
 }
 
-final class WeekViewController: UIViewController, FloaterViewDelegate {
-    func userDidTapOnItem(at index: Int, with model: String) {
-        print("test")
-    }
+final class WeekViewController: UIViewController {
     
     
     // MARK: - Properties
@@ -82,7 +78,7 @@ final class WeekViewController: UIViewController, FloaterViewDelegate {
         
         // Setup View
         setupView()
-//        addFloaterMenu(with: [("Facebook", UIImage(named: "facebook")),("Instagram", UIImage(named: "instagram"))], mainItem: ("Connect", UIImage(named: "share")), dropShadow: true)
+        
     }
     
     // MARK: - View Methods

@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0809583517B6D4B27CA97D78 /* Pods_RainstormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7437779D63769DF8E853C5 /* Pods_RainstormTests.framework */; };
 		7B620D4DD125FEBD3337AC90 /* Pods_Rainstorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDBE696351E4017C03A4BEE /* Pods_Rainstorm.framework */; };
+		AC4BB571241476AF0081543F /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BB570241476AF0081543F /* ARViewController.swift */; };
+		AC4BB573241479520081543F /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AC4BB572241479520081543F /* chair_swan.usdz */; };
 		CC15058120D2524500D64750 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15058020D2524500D64750 /* WeatherRequest.swift */; };
 		CC15058420D254F700D64750 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15058320D254F700D64750 /* Configuration.swift */; };
 		CC2D1C2320FC696700A9A109 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D1C2220FC696700A9A109 /* DayViewModel.swift */; };
@@ -51,6 +53,8 @@
 		0BDBE696351E4017C03A4BEE /* Pods_Rainstorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainstorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7437779D63769DF8E853C5 /* Pods_RainstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		690F1F271839DF76CBEA91A3 /* Pods-RainstormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainstormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainstormTests/Pods-RainstormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC4BB570241476AF0081543F /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		AC4BB572241479520081543F /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = chair_swan.usdz; path = ../../../../../Downloads/chair_swan.usdz; sourceTree = "<group>"; };
 		BBB4E5FA2FD75049966EFC00 /* Pods-RainstormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainstormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainstormTests/Pods-RainstormTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC15058020D2524500D64750 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
 		CC15058320D254F700D64750 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -114,6 +118,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC4BB57424147A250081543F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CC15057B20D2507C00D64750 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +183,8 @@
 		CC65216020C0355F00FC1C99 /* Rainstorm */ = {
 			isa = PBXGroup;
 			children = (
+				AC4BB57424147A250081543F /* Model */,
+				AC4BB572241479520081543F /* chair_swan.usdz */,
 				CC65217320C0378E00FC1C99 /* Application Delegate */,
 				CC65217420C0397500FC1C99 /* View Controllers */,
 				CC15058220D2546400D64750 /* Configuration */,
@@ -240,6 +253,7 @@
 		CC7F080F20C82FFD000AEBC1 /* Weather View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC4BB570241476AF0081543F /* ARViewController.swift */,
 				CC7F081020C8300E000AEBC1 /* Day View Controller */,
 				CC7F081320C83202000AEBC1 /* Week View Controller */,
 			);
@@ -341,7 +355,6 @@
 				CC65215A20C0355F00FC1C99 /* Sources */,
 				CC65215B20C0355F00FC1C99 /* Frameworks */,
 				CC65215C20C0355F00FC1C99 /* Resources */,
-				46EE304CD1F2CF0A9711270F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,6 +431,7 @@
 			files = (
 				CC65216C20C0356000FC1C99 /* LaunchScreen.storyboard in Resources */,
 				CC65216920C0356000FC1C99 /* Assets.xcassets in Resources */,
+				AC4BB573241479520081543F /* chair_swan.usdz in Resources */,
 				CC65216720C0355F00FC1C99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,23 +466,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46EE304CD1F2CF0A9711270F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rainstorm/Pods-Rainstorm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55FB016E4C297686294D2A1E /* [CP] Embed Pods Frameworks */ = {
@@ -520,6 +517,7 @@
 				CC756E2221C2B1AD00C79D53 /* NetworkManager.swift in Sources */,
 				CC756E2021C2B05600C79D53 /* NetworkService.swift in Sources */,
 				CC7F081A20C83516000AEBC1 /* UIStoryboard.swift in Sources */,
+				AC4BB571241476AF0081543F /* ARViewController.swift in Sources */,
 				CC5A9916210EFF090012B31F /* Styles.swift in Sources */,
 				CC9E945A2170DEC200FBB3C0 /* LocationService.swift in Sources */,
 				CCD0ED9B2146AF2E0086FB90 /* WeekDayTableViewCell.swift in Sources */,
@@ -700,13 +698,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2493UGBPKJ;
+				DEVELOPMENT_TEAM = QDKMBCK8ZF;
 				INFOPLIST_FILE = "$(SRCROOT)/Rainstorm/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocoacasts.Rainstorm;
+				PRODUCT_BUNDLE_IDENTIFIER = "-13425";
 				PRODUCT_NAME = Rainstorm;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -719,13 +717,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2493UGBPKJ;
+				DEVELOPMENT_TEAM = QDKMBCK8ZF;
 				INFOPLIST_FILE = "$(SRCROOT)/Rainstorm/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocoacasts.Rainstorm;
+				PRODUCT_BUNDLE_IDENTIFIER = "-13425";
 				PRODUCT_NAME = Rainstorm;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -27,8 +27,6 @@ class LocationManager: NSObject, LocationService {
         return locationManager
     }()
     
-    // MARK: - Location Service
-    
     func fetchLocation(completion: @escaping LocationService.FetchLocationCompletion) {
         // Store Reference to Completion
         self.didFetchLocation = completion

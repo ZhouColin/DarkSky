@@ -10,8 +10,6 @@ import UIKit
 
 final class DayViewController: UIViewController {
     
-    // MARK: - Properties
-    
     var viewModel: DayViewModel? {
         didSet {
             guard let viewModel = viewModel else {
@@ -22,15 +20,19 @@ final class DayViewController: UIViewController {
             setupViewModel(with: viewModel)
         }
     }
-    
-    // MARK: -
-    
     @IBOutlet var dateLabel: UILabel! {
         didSet {
             dateLabel.textColor = UIColor.Rainstorm.baseTextColor
             dateLabel.font = UIFont.DarkSky.heavyLarge
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destVC = segue.destination as? ARViewController, segue.identifier == "toPokemonSegue" {
+            destVC.selectedModel = ""
+        }
+    }
+
     
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var windSpeedLabel: UILabel!
@@ -48,8 +50,6 @@ final class DayViewController: UIViewController {
         }
     }
 
-    // MARK: -
-    
     @IBOutlet var regularLabels: [UILabel]! {
         didSet {
             for label in regularLabels {
@@ -76,16 +76,12 @@ final class DayViewController: UIViewController {
         }
     }
     
-    // MARK: -
-    
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView! {
         didSet {
             activityIndicatorView.startAnimating()
             activityIndicatorView.hidesWhenStopped = true
         }
     }
-    
-    // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,14 +90,11 @@ final class DayViewController: UIViewController {
         setupView()
     }
     
-    // MARK: - View Methods
-    
     private func setupView() {
         // Configure View
         view.backgroundColor = UIColor.Rainstorm.lightBackgroundColor
     }
 
-    // MARK: - Helper Methods
     
     private func setupViewModel(with viewModel: DayViewModel) {
         // Hide Activity Indicator View

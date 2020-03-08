@@ -14,11 +14,7 @@ struct DayViewModel {
     
     let weatherData: CurrentWeatherConditions
     
-    // MARK: -
-    
     private let dateFormatter = DateFormatter()
-    
-    // MARK: -
     
     var date: String {
         // Configure Date Formatter
